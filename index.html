@@ -302,7 +302,6 @@
             <img src="LOGORE.png" alt="Logo de la empresa"> <!-- Sustituye "logo.png" con la ruta de tu imagen de logotipo -->
         </div>
         <div class="secciones">
-            <a href="#Busqueda">Productos</a>
             <a href="#Reseña">Reseñas </a>
             <a href="#AboutUs">About Us</a>
             <a href="#Registro">Registrate Ya!</a>
@@ -317,82 +316,9 @@
         </div>
     </div>
 
-
-    <!-- Contenido de la página de aterrizaje -->
-    <section id="Busqueda">
-     <!-- Cuadro de búsqueda -->
-    <div class="search-box">
-        <input type="text" placeholder="Buscar productos">
-        <button><i class="fas fa-search"></i></button>
-    </div>
-
-    <!-- Categorías de la farmacia en una fila -->
-    <div class="categories">
-        <!-- Categoría 1 -->
-        <div class="category">
-            <img src="niños.png" alt="Categoría 1">
-            <h3>Infantil</h3>
-            <p>Productos de cuidado y salud para niños.</p>
-        </div>
-
-        <!-- Categoría 2 -->
-        <div class="category">
-            <img src="higiene.png" alt="Categoría 2">
-            <h3>Higiene</h3>
-            <p>Artículos esenciales para el cuidado personal.</p>
-        </div>
-
-        <!-- Categoría 3 -->
-        <div class="category">
-            <img src="adultomayor.png" alt="Categoría 3">
-            <h3>Adultos Mayores</h3>
-            <p>Soluciones para la salud y bienestar de la tercera edad.</p>
-        </div>
-
-        <!-- Categoría 4 -->
-        <div class="category">
-            <img src="ortopedia.png" alt="Categoría 4">
-            <h3>Ortopedia</h3>
-            <p>Dispositivos y productos para la movilidad y comodidad.</p>
-        </div>
-
-        <!-- Categoría 5 -->
-        <div class="category">
-            <img src="cosmetica.png" alt="Categoría 5">
-            <h3>Cosmética</h3>
-            <p>Productos de belleza y cuidado personal.</p>
-        </div>
-
-        <!-- Categoría 6 -->
-        <div class="category">
-            <img src="dermaa.png" alt="Categoría 6">
-            <h3>Dermocosmetica</h3>
-            <p> Cuidado avanzado de la piel y belleza.</p>
-        </div>
-    </div>
-
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     </section>
-     <!-- Sección del Mapa de Google -->
-     <div id="google-map" style="width: 100%; height: 400px;"></div>
-
-     <script>
-         function initMap() {
-             // Coordenadas para centrar el mapa (puedes ajustar estas coordenadas)
-             var centerCoordinates = { lat: 9.1900, lng: -75.0152 }; // Por ejemplo, Nueva York
- 
-             // Crear un nuevo mapa en el elemento con ID "google-map"
-             var map = new google.maps.Map(document.getElementById('google-map'), {
-                 center: centerCoordinates,
-                 zoom: 12 // Nivel de zoom (ajusta según tus necesidades)
-             });
- 
-             // Puedes personalizar el mapa, agregar marcadores, etc., según tus requerimientos
-             // Consulta la documentación de Google Maps para más detalles: https://developers.google.com/maps/documentation/javascript/overview
-         }
-     </script>
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcBXSZIiRIzmEYogAsqqaCVKYx8gzGzAI&callback=initMap" async defer></script>
  
 
     <section id="Reseña">
@@ -417,6 +343,7 @@
         <!-- Agrega más testimonios siguiendo la misma estructura -->
     </section>
 
+   <section id="AboutUs">
     <div class="about-us">
         <h2>Misión, Visión y Valores</h2>
 
@@ -445,24 +372,8 @@
     </div>
     </section>
 
-    <section id="Registro">
-        <h1>Registro</h1>
-        
-        <form action="procesar_registro.php" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-    
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
-    
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
-    
-            <input type="submit" value="Registrarse">
-        </form>
-    </section>
     <div id="footer">
-        <p>&copy; 2023 Tu Empresa | <a href="#">Términos de Servicio</a> | <a href="#">Política de Privacidad</a></p>
+        <p>&copy; 2024 FarmaGO | <a href="#">Términos de Servicio</a> | <a href="#">Política de Privacidad</a></p>
         <p>Síguenos en redes sociales:</p>
         <a href="https://www.facebook.com/TuEmpresa" target="_blank">Facebook</a>
         <a href="https://twitter.com/TuEmpresa" target="_blank">Twitter</a>
